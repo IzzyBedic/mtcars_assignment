@@ -24,4 +24,4 @@ mt_car_mercedes %>%
        x = "Type of Engine",
        y = "Weight (1000 lbs)") +
   scale_x_discrete(labels = c("V-Shaped", "Straight")) +
-  theme_minimal()
+  theme_grey()
