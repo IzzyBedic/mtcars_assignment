@@ -19,4 +19,9 @@ mt_car_mercedes <- mt_cars_all_columns %>%
 mt_car_mercedes %>% 
   mutate(vs = as.factor(vs)) %>%
   ggplot() +
-  geom_boxplot(aes(vs, wt))
+  geom_boxplot(aes(vs, wt)) +
+  labs(title = "Differences in Weights Between V-Shaped and Straight Engines of Mercedes",
+       x = "Type of Engine",
+       y = "Weight (1000 lbs)") +
+  scale_x_discrete(labels = c("V-Shaped", "Straight")) +
+  theme_minimal()
